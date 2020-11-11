@@ -1,6 +1,15 @@
 import React from 'react'
-import { BreweriesListView } from './src/modules/brewery/views/breweries-list-view/BreweriesListView'
+import { BreweriesListView } from 'modules/brewery/views/breweries-list-view/BreweriesListView'
+import { Provider as PaperProvider } from 'react-native-paper'
+import { Provider as StoreProvider } from 'react-redux'
+import { appStore } from 'core/app-store'
 
 export const App = () => {
-    return <BreweriesListView></BreweriesListView>
+    return (
+        <StoreProvider store={appStore()}>
+            <PaperProvider>
+                <BreweriesListView></BreweriesListView>
+            </PaperProvider>
+        </StoreProvider>
+    )
 }
