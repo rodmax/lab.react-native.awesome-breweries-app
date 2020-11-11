@@ -1,0 +1,32 @@
+{
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "cSpell.words": [
+    "browserslist",
+    "depcruise",
+    "devtool",
+    "devtools",
+    "mqpacker"
+  ],
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true
+  }
+}
