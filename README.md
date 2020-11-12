@@ -1,5 +1,10 @@
 # React Native Awesome Breweries App
 
+Simple application to search for breweries<br>
+the purpose of development is to study the **react native** technology
+
+<img src="./assets/screenshot.jpg" height="240px">
+
 ## Key notes
 
 -   application developed and tested only on real android device in development mode using android-studio
@@ -26,7 +31,7 @@
 1️⃣ start android-studio
 
 ```bash
-# FIXME: bellow task assumes that  android-studio binary lives
+# NOTE: bellow task assumes that  android-studio binary lives
 # in $HOME/android-tools/android-studio/bin/
 # if no, please run it manually
 npm run android-studio
