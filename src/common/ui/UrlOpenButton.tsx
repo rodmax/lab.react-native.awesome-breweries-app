@@ -17,6 +17,7 @@ export const OpenURLButton: React.FC<Props> = ({ url, children }) => {
             // by some browser in the mobile
             await Linking.openURL(url)
         } else {
+            // FIXME: consult UX designer how to handle this issue
             Alert.alert(`Don't know how to open this URL: ${url}`)
         }
     }, [url])

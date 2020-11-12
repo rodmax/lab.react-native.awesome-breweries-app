@@ -27,7 +27,7 @@ const initialState: BreweriesListState = {
     activeItemId: null,
     error: null,
     page: breweryApiClient.FIRST_PAGE_INDEX,
-    per_page: 10,
+    per_page: 20,
 }
 
 export type BreweriesListStateSlice = StateSlice<typeof breweriesListReducerSlice>

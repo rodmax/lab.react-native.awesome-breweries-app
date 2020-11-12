@@ -53,7 +53,7 @@ export const BreweriesListView: React.FC = () => {
     }
 
     return (
-        <>
+        <SafeAreaView>
             <View>
                 <BreweriesListSearch
                     value={search}
@@ -65,18 +65,14 @@ export const BreweriesListView: React.FC = () => {
                 item={activeItem}
                 onDismiss={() => dispatch(breweriesListActions.closeItem())}
             ></BreweryDetailsModal>
-            <SafeAreaView>
-                <FlatList
-                    scrollsToTop={true}
-                    refreshing={isLoading}
-                    data={items}
-                    key='id'
-                    renderItem={renderItem}
-                    onEndReached={loadMore}
-                    ListFooterComponent={renderFooter}
-                ></FlatList>
-            </SafeAreaView>
-        </>
+            <FlatList
+                data={items}
+                keyExtractor={item => item.id.toString()}
+                renderItem={renderItem}
+                onEndReached={loadMore}
+                ListFooterComponent={renderFooter}
+            ></FlatList>
+        </SafeAreaView>
     )
 }
 
